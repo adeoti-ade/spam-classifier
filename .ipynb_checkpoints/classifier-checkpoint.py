@@ -2,6 +2,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
 
+
 def predict_spam_or_ham(sms=None):
     if not isinstance(sms, (list, )):
         raise AssertionError("sms must be of type list")
